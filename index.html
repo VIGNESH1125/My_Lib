@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Lib</title>
+</head>
+<body>
+    <section class="header">
+        <div class="tile">
+            <h1 id="myLib">My Lib</h1>
+        </div>
+
+        <div class="elements">
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books by category</a></li>
+                <li><a href="myBooks.html">My Books</a></li>
+                <li><a href="byAuthor.html">My Books</a></li>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="search....">
+                <button id="nav-search" onclick="searchBook()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="trending">
+            <h3 class="sub-title">Trending</h3>
+            <div class="book">
+                <img src="Images\T_book1.png" alt="T_book1">
+                <label id="book_label">Death Note</label>
+                <p id="book_dis">Death Note went out with a bang with its final cover, proving that the series' art is just as good as its suspenseful and brilliant story. 
+                    The cover featured Light, L, Near and Mello, with the protagonist stretching his hands in a cross-shape, a reference to his ego and God complex. 
+                    As much as he was the main character, his death was quite satisfying given how cruel and self-conceited he had been. Death Note is one of the most popular manga of all time and stands out as one of the best plot-driven series ever.</p>
+                <button type="add-to-list" onclick="addToList()">Add</button>
+            </div>
+
+            <div class="book">
+                <img src="Images\T_book2.png" alt="">
+                <label id="book_label">Sakamoto Days</label>
+                <p id="book_dis">A relatively new series, Sakamoto Days has been the talk of the town recently,
+                     not just for its action-packed premise that draws comparisons to John Wick, but it also has 
+                     art that's hailed as one of Shonen Jump's best in a very long time. 
+                     Yuto Suzuki's over-the-top art style, which includes some of the most impressive weaponry 
+                     in the series, is depicted in the art that features Gaku with a huge hammer-like weapon that
+                      also has spikes. Sakamoto Days is an extremely underrated series is poised to be Shonen Jump's
+                    next big manga, 
+                    and an eventual anime adaptation looks very realistic.</p>
+                <button type="add-to-list" onclick="addToList()">Add</button>
+            </div>
+
+            <div class="book">
+                <img src="Images\T_book3.png" alt="">
+                <label id="book_label">One Piece</label>
+                <p id="book_dis">Although the cover of One Piece's 60th volume wasn't as
+                     memorable as the others, it packed the most emotional punch. 
+                     Following the end of the epic Marineford arc, Luffy was at the lowest point of his life, 
+                     not only witnessing the brutal death of his brother Ace in front of him, but not having his 
+                     crew by his side. The cover shows the childhood version of Luffy, Ace, and Sabo, with the arc 
+                     diving deeper into the lives of the three brothers. This was by far the saddest stretch 
+                     of chapters, as fans truly understood the weight of Luffy's loss. Fortunately, Jimbei and 
+                     Rayleigh were there for our beloved rubber man 
+                    and helped him recover from the traumatic incident and become stronger.</p>
+                <button type="add-to-list" onclick="addToList()">Add</button>
+            </div>
+
+            <div class="book">
+                <img src="Images\T_book4.png" alt="">
+                <label id="book_label">Vinland Saga</label>
+                <p id="book_dis">It was almost impossible to imagine Thorfinn living a peaceful 
+                    life after all that happened to him in his early years, but he managed to do it. 
+                    From adopting a child and a dog, getting a beautiful wife and founding a peaceful city in 
+                    Vinland, he became the kind and gentle man he always wished to be, and it was all symbolized 
+                    on the cover of Volume 16. Sitting on the farm with his child and 
+                    dog on a beautiful sunny day, few people deserved a good life more than Thorfinn.</p>
+                <button type="add-to-list" onclick="addToList()">Add</button>
+            </div>
+
+            <div class="book">
+                <img src="Images\T_book5.png" alt="">
+                <label id="book_label">Tokyo Ghoul</label>
+                <p id="book_dis">The bleak and ghostly art displayed in Tokyo Ghoul's 13th 
+                    volume is the perfect representation of the story's atmosphere. On a snowy night, 
+                    the investigators launched a full-scale assault on a small café called Anteiku which was 
+                    a meeting ground for ghouls. The agency wanted to down the Owl, a powerful and extremely 
+                    dangerous ghoul that had slaughtered many people years ago but had disappeared ever since. 
+                    The night was extremely tragic, not only displacing many ghouls who weren't a threat to humans, 
+                    but also the death of Kaneki at the hands of the strongest investigator, Arima.</p>
+                <button type="add-to-list" onclick="addToList()">Add</button>
+            </div>
+
+            <hr>
+
+            <div class="popular">
+                <h3 class="sub-title">Popular</h3>
+                <div class="book">
+                    <img src="Images/P_book1.png" alt="">
+                    <label id="book_label">Slam Dunk</label>
+                    <p id="book_dis">Slam Dunk is the premiere sports comic, and one 
+                        of its strongest points was the constantly improving art that 
+                        dazzled readers with every turn of the page. Takehiko Inoue was a 
+                        brilliant artist, and an even better painter, with his coloring skills 
+                        breathing life into his covers and hooking readers even before the book is opened. 
+                        Sakuragi and Shuhoko's tough battle against Ryonan was at its peak, and the stakes were
+                         higher than ever, with the winner qualifying for the nationals. The art displayed Sakuragi
+                          attempting his famous "commoner's shot" with Fukuda attempting to 
+                        block him and Akagi preparing himself to grab the rebound.</p>
+                    <button type="add-to-list" onclick="addToList()">Add</button>
+                </div>
+    
+                <div class="book">
+                    <img src="Images/P_book2.png" alt="">
+                    <label id="book_label">Chainsaw man</label>
+                    <p id="book_dis">Chainsaw Man's covers are always vibrant, colorful,
+                         and full of life, and its first cover is its most iconic. 
+                         It sums up the vibe of the series and shows the gore that will be
+                          present all throughout. Fujimoto's skills as an illustrator have never been doubted, 
+                          with Fire Punch and Goodbye Eri displaying his skill as a mangaka.
+                           Although Chainsaw Man had a very noticeable drop in art quality as 
+                           compared to his previous works, he let loose when it came to the manga covers. 
+                           From using bright and varying colors to giving fans a hint of what's to come,
+                         Chainsaw Man was a great example of cover art done right.</p>
+                    <button type="add-to-list" onclick="addToList()">Add</button>
+                </div>
+    
+                <div class="book">
+                    <img src="Images/P_book3.png" alt="">
+                    <label id="book_label">One Punch Man</label>
+                    <p id="book_dis">The One-Punch Man set of volume covers are like a jigsaw puzzle, 
+                        and they can be put together to form a gorgeous piece of artwork. The cover of volume 
+                        20 is especially an eye-catcher, not only perfectly displaying the true beauty of Yusuke 
+                        Murata's art style but also featuring many of the S-rank heroes in an epic start to the series'
+                         biggest battle between humanity and the monsters. Murata stands out for his realistic art style,
+                          but his coloring and shading are 
+                        also a huge point of strength for the new founder of an anime studio.</p>
+                    <button type="add-to-list" onclick="addToList()">Add</button>
+                </div>
+    
+                <div class="book">
+                    <img src="Images/P_book4.png" alt="">
+                    <label id="book_label">Vagabond</label>
+                    <p id="book_dis">Described as a demon and a problem child ever since he was a child, 
+                        Miyamoto Musashi's character development into an enlightened and wise man was one of 
+                        the most beautiful journeys in fiction. The 28th cover was the first to show his new 
+                        persona as a man who finally achieved inner peace and set his priorities straight. 
+                        With his hands together in a praying gesture and a statue behind him, this cover was a 
+                        tribute to the painful journey of the Japanese legend from centuries ago before becoming a
+                         philosopher and an 
+                        incredible swordsman who left his legacy and mark for many years to come.</p>
+                    <button type="add-to-list" onclick="addToList()">Add</button>
+                </div>
+    
+                <div class="book">
+                    <img src="Images/P_book5.png" alt="">
+                    <label id="book_label">Naruto Shipuden</label>
+                    <p id="book_dis">Even after 70 volumes and hundreds of chapters of 
+                        incredible art, Kishimito's drawings were as gorgeous to look at as ever. 
+                        The 70th volume was especially visually appealing, featuring Indra and Ashura, 
+                        Madara and Hashirama, and Naruto and Sasuke, with Hagoromo at the center. 
+                        This powerful piece was a comparison of the most powerful shinobi and enemies
+                         who were closer than blood, but their relationship turned sour. The genius and 
+                         cold-hearted Indra reincarnated as Madara and Sasuke, while the hardworking and 
+                         kind Ashura reincarnated as Hashirama and Naruto, showing that Naruto and Sasuke's
+                          fate had already 
+                        played out two times, but they also had the chance to do it differently.</p>
+                    <button type="add-to-list" onclick="addToList()">Add</button>
+                </div>
+        </div>
+
+        <hr>
+
+        <div class="author-collection">
+            <h3 class="sub-title">Author's Collections</h3>
+            <div class="author">
+                <a href="byAuthor.html"><img src="Images/auth1.png" alt=""></a>
+                <label id="auth_name">Kentaro Miura</label>
+                <p id="details">Kentaro Miura is a very respected mangaka in Japan. He is best known 
+                for his epic dark fantasy manga series, Berserk..</p>
+            </div>
+
+            <div class="author">
+                <a href="byAuthor.html"><img src="Images/auth2.png" alt=""></a>
+                <label id="auth_name">Hiromu Arakawa</label>
+                <p id="details">Hiromu Arakawa was born in the Hokkaido Prefecture of Japan. 
+                She went on to pursue her career as an illustrator and manga artist doing doujinshi and fan work. 
+                In 1996, she debuted her first full-length manga series, “Fullmetal Alchemist.”</p>
+            </div>
+
+            <div class="author">
+                <a href="byAuthor.html"><img src="Images/auth3.png" alt=""></a>
+                <label id="auth_name">Akira Toriyama</label>
+                <p id="details">Akira Toriyama is a Japanese manga artist, anime director, and game designer. 
+                    He is best known for his manga series Dragon Ball, 
+                    which was later adapted into an anime TV series.</p>
+            </div>
+
+            <div class="author">
+                <a href="byAuthor.html"><img src="Images/auth4.png" alt=""></a>
+                <label id="auth_name">Rumiko Takahashi</label>
+                <p id="details">Rumiko Takahashi is one of the most successful female cartoonists of all time.
+                     Rumiko Takahashi was born in Niigata Prefecture, Japan.
+                     She graduated from Niigata University with a degree in Education.</p>
+            </div>
+
+            <div class="author">
+                <a href="byAuthor.html"><img src="Images/auth5.png" alt=""></a>
+                <label id="auth_name">Eichiro Oda</label>
+                <p id="details">Eiichiro Oda is the author of One Piece, 
+                    one of the most popular manga series. He has been drawing manga ever since he was a child. 
+                    In 1994, he became an assistant for the Weekly Shonen Jump magazine,
+                     leading to the later publication of his work One Piece.</p>
+            </div>
+
+        
+    </section>
+
+    <section class="Footer">
+        <div class="contact-us">
+            <p>
+            <span>Mobile: 91+ 8907654321</span>
+            <span>Email: <a href="#" target="_blank">mylib@gmail.com</a></span>
+            <span>Instagram: <a href="#" target="_blank">mylib@read</a></span>
+            <span>Twiter: <a href="#" target="_blank">myLib@read</a></span>
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>
